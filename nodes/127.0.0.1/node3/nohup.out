@@ -1,0 +1,12 @@
+[2019-12-13 16:46:44] Initializing...
+[INITIALIZER][P2PInitializer]initConfig for P2PInitializer failed,check Port=30303,EINFO=Throw location unknown (consider using BOOST_THROW_EXCEPTION)
+Dynamic exception type: boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::system::system_error> >
+std::exception::what: bind: Address already in use
+
+[2019-12-13 16:47:52] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-12-13 16:47:52] The FISCO-BCOS is running...

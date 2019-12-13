@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Transaction</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<style type="text/css">
+	    	body{
+		   background: url(pic.jpeg) bottom center no-repeat #efeff4 ;
+		   background-size: 100% 100%;
+		   width: 100%;
+		   height: 100%;
+		}
+	</style>
+	</head>
+
+	<body>
+		<h1>Transaction</h1>
+		<form method="post">
+		<p>Address(private):</p>
+		<br>
+		<input type="text" name="privateKey">
+		</br>
+		<p>Function:</p>
+		<br>
+		<select>
+		<option value="Setup">Setup a company</option>	
+		<option value="AddReceipt">Add a receipt</option>
+		<option value="OpenTable1">Open t_asset</option>
+		<option value="OpenTable2">Open t_receipt</option>	
+		<option value="delegate">Delegate a debt</option>	
+		<option value="loan">Load from Bank</option>	
+		<option value="repay">Repay a receipt</option>	
+		
+		</select>
+		</br>
+		<p>Parameters:</p>
+		<br>
+		<input type="text" name="funcParams">
+		</br>
+		<input type="submit" value="submit">
+		</form>
+
+
+		<h2>Functions lists</h2>
+		<table border="1">
+			<tr>
+				<th>FuncName</th>
+				<th>FuncParams</th>
+				<th>Return</th>
+			</tr>
+			<tr>
+				<td>Setup a company</td>
+				<td>(string s,string a,uint256 i,uint256 m)</td>
+				<td>result</td>
+			</tr>
+			<tr>
+				<td>Add a receipt</td>
+				<td>(address t,uint256 m,uint256 choice)</td>
+				<td>receipt's ID</td>
+			</tr>
+			<tr>
+				<td>Open t_asset</td>
+				<td>null</td>
+				<td>table t_asset</td>
+			</tr>
+			<tr>
+				<td>Open t_receipt</td>
+				<td>null</td>
+				<td>table t_receipt</td>
+			</tr>
+			<tr>
+				<td>Delegate a debt</td>
+				<td>(address to,uint256 mount,uint256 choice)</td>
+				<td>receipt's ID</td>
+			</tr>
+			<tr>
+				<td>Load from Bank</td>
+				<td>(address to,uint256 mount)</td>
+				<td>receipt's ID</td>
+			</tr>
+			
+		</table>
+		</div>
+	</body>
+</html>
